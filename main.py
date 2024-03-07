@@ -178,7 +178,7 @@ var_tokenization = tk.IntVar()
 check_tokenization = tk.Checkbutton(frame_pretraitement_modelisation, text="Tokenization", variable=var_tokenization, bg=background_color)
 check_tokenization.grid(row=5, column=0, padx=10, sticky="w")
 
-
+dfdgdfd
 
 
 
