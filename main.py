@@ -178,19 +178,8 @@ var_tokenization = tk.IntVar()
 check_tokenization = tk.Checkbutton(frame_pretraitement_modelisation, text="Tokenization", variable=var_tokenization, bg=background_color)
 check_tokenization.grid(row=5, column=0, padx=10, sticky="w")
 
-# Bouton "Appliquer" pour le prétraitement des données
-btn_appliquer_pretraitement = tk.Button(frame_pretraitement_modelisation, text="Appliquer", command=appliquer_pretraitement, bg=button_color, fg=button_text_color)
-btn_appliquer_pretraitement.grid(row=6, column=0, columnspan=2, pady=10)
 
-# Titre "Modélisation thématique"
-label_modelisation = tk.Label(frame_pretraitement_modelisation, text="Modélisation thématique", font=("Helvetica", 14, "bold"), fg=title_color, bg=background_color)
-label_modelisation.grid(row=7, column=0, columnspan=2, padx=10, sticky="w")
 
-# Menu déroulant pour choisir le modèle
-var_modele = tk.StringVar()
-var_modele.set("Machine Learning")  # Par défaut
-option_modele = tk.OptionMenu(frame_pretraitement_modelisation, var_modele, "Machine Learning", "Deep Learning", "Transfer Learning", "Ensemble Learning")
-option_modele.grid(row=8, column=0, padx=10, sticky="w")
 
 
 btn_appliquer_modelisation = tk.Button(frame_pretraitement_modelisation, text="Appliquer", command=appliquer_modelisation, bg=button_color, fg=button_text_color)
